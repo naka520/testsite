@@ -1,18 +1,26 @@
 import Style from "../App.css";
-import logo from './logo.svg';
+import {
+  AppBar,
+  Button,
+  IconButton,
+  Stack,
+  Toolbar,
+  Typography,
+} from "@mui/material";
+import { Box } from "@mui/system";
 
-function Header() {
-    return (
-        <div className={Style.App}>
-        <header className={Style.Appheader}>
-          <img src={logo} className={Style.Applogo} alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          
-        </header> 
-      </div>
-        );
-    }
-    
-    export default Header;
+const Header = () => {
+  return (
+    <div>
+      <AppBar position="static">
+        <Toolbar className="bg-gray-300">
+          <Typography variant="h6">
+            <Box textAlign="left">OkameCalender</Box>
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
+};
+
+export default Header;
