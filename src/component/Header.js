@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div>
       <AppBar position="static">
-        <Toolbar className="bg-gray-300">
+        <Toolbar className="bg-gray-200">
           <Typography variant="h6">
             <Box textAlign="left">
               <p className="text-slate-700">OkameCalender</p>

@@ -14,7 +14,9 @@ const Top = () => {
       <Stack>
         <ul className="yoko">
           <li className="hiduke">
-            <FullCalendar />
+            <Box sx={{ p: 2, border: "2px dashed grey" }}>
+              <FullCalendar />
+            </Box>
           </li>
           <ul className="side">
             <li className="okame">
