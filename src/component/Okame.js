@@ -1,8 +1,9 @@
+import { Stack } from "@mui/system";
+import okame1 from "./okame1.png";
+
 const Okame = () => {
   return (
-    <div>
-      <h1>Okame</h1>
-    </div>
+    <img src={okame1} sx={{ width: "60%", margin: "auto", display: "block" }} />
   );
 };
 

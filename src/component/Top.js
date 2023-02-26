@@ -3,26 +3,29 @@ import logo from "./logo.svg";
 import Header from "./Header";
 import { List, Stack, Typography } from "@mui/material";
 import { Box, width } from "@mui/system";
-import PickDayCalendar from "./Calender";
+import FullCalendar from "./Calender";
 import Okame from "./Okame";
+import Mokuhyoutaizyuu from "./mokuhyoutaizyuu";
 
 const Top = () => {
   return (
-    <div className={Style.App}>
+    <div>
       <Header />
       <Stack>
-        <Box sx={{ width: 500, height: 500, padding: 10 }}>
-          <Typography>
-            <PickDayCalendar />
-          </Typography>
-        </Box>
+        <ul className="yoko">
+          <li className="hiduke">
+            <FullCalendar />
+          </li>
+          <ul className="side">
+            <li className="okame">
+              <Okame />
+            </li>
+            <li className="mokuhyou">
+              <Mokuhyoutaizyuu />
+            </li>
+          </ul>
+        </ul>
       </Stack>
-      <List>
-        <Stack>
-          <Okame />
-        </Stack>
-        <Stack></Stack>
-      </List>
     </div>
   );
 };

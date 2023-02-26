@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vw;
 }
 
 .Applogo {
@@ -7,10 +9,33 @@
   pointer-events: none;
 }
 
+.yoko {
+  display: flex;
+  padding-left: 10vw;
+  padding-top: 5vw;
+  width: 100vw;
+  height: 100vw;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .Applogo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.side {
+  padding-left: 15vw;
+}
+
+.mokuhyou {
+  height: 200px;
+  width: 200px;
+  padding-top: 10vw;
+}
+
+.hiduke {
+  padding-top: 5vw;
+  padding-left: 5vw;
 }
 
 .Appheader {

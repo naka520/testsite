@@ -15,7 +15,9 @@ const Header = () => {
       <AppBar position="static">
         <Toolbar className="bg-gray-300">
           <Typography variant="h6">
-            <Box textAlign="left">OkameCalender</Box>
+            <Box textAlign="left">
+              <p className="text-slate-700">OkameCalender</p>
+            </Box>
           </Typography>
         </Toolbar>
       </AppBar>
