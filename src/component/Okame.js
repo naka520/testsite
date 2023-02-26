@@ -1,12 +1,12 @@
 import { Box } from "@mui/material";
 import { Stack } from "@mui/system";
-import okame1 from "./okame1.png";
+import okame2 from "./okame2.png";
 
 const Okame = () => {
   return (
     <Box sx={{ p: 2, border: "2px dashed grey" }}>
       <img
-        src={okame1}
+        src={okame2}
         sx={{
           width: "60%",
           margin: "auto",
