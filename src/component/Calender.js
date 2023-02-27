@@ -36,13 +36,16 @@ const Calendar = ({ events, setEvents }) => {
     if (InputDiet === "") {
       alert("空文字列は受理できない！");
     } else {
+      console.log(date);
+      const trcdate = date.startOf("date");
+
       const newEvent = [
         ...events,
         {
           title: InputDiet + "kg",
           diet: Number(InputDiet),
-          start: date.toISOString(),
-          end: date.toISOString(),
+          start: trcdate.toISOString(),
+          end: trcdate.toISOString(),
         },
       ];
 
