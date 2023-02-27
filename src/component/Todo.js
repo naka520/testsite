@@ -6,9 +6,6 @@ const Todo = ({ content, index, todos, setTodos }) => {
     <div>
       <Stack direction="row" spacing={2} justifyContent="center">
         <Typography variant="h6">{content}</Typography>
-        <IconButton className="">
-          <CheckCircleIcon sx={{ color: "#55ff55" }} />
-        </IconButton>
       </Stack>
     </div>
   );

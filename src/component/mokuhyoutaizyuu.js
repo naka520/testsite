@@ -11,7 +11,9 @@ import Todo from "./Todo";
 import { useState, useEffect } from "react";
 
 const Mokuhyoutaizyuu = () => {
-  var data = "";
+  const data = localStorage.getItem("todos")
+    ? JSON.parse(localStorage.getItem("todos"))
+    : [];
   const [InputText, setInputText] = useState("");
   const [todos, setTodos] = useState(data);
 
@@ -43,11 +45,11 @@ const Mokuhyoutaizyuu = () => {
           }}
         />
         <Button
-          className="bg-gradient-to-b from-orange-400 to-orange-500"
+          className="bg-gradient-to-b from-slate-700 to-slate-500"
           onClick={handleAddTodo}
           variant="outlined"
         >
-          追加
+          <Typography className="text-white">追加</Typography>
         </Button>
         <List
           sx={{ overflow: "auto", maxHeight: "150px" }}
