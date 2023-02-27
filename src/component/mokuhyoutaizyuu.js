@@ -44,10 +44,10 @@ const Mokuhyoutaizyuu = ({ targetdiet, setTargetdiet }) => {
         onClick={handleAddTodo}
         variant="outlined"
       >
-        追加
+        <p className="text-white">追加</p>
       </Button>
       <List
-        sx={{ overflow: "auto", maxHeight: "150px" }}
+        sx={{ overflow: "auto", maxHeight: "100px" }}
         style={{ listStyle: "none" }}
       >
         {/* {todos.map((item, index) => {
@@ -61,7 +61,7 @@ const Mokuhyoutaizyuu = ({ targetdiet, setTargetdiet }) => {
           <Todo content={targetdiet} />
         </ListItem>
       </List>
-      <p>kg</p>
+      
     </Box>
   );
 };

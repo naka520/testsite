@@ -19,6 +19,7 @@ import { TimePicker } from "@mui/x-date-pickers/TimePicker";
 import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
 import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
+import { Typography } from "@mui/material";
 
 const Calendar = ({ events, setEvents }) => {
   const [open, setOpen] = React.useState(false);

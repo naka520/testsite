@@ -5,7 +5,7 @@ const Todo = ({ content, index, todos, setTodos }) => {
   return (
     <div>
       <Stack direction="row" spacing={2} justifyContent="center">
-        <Typography variant="h6">{content}</Typography>
+        <Typography variant="h8">{content}kg</Typography>
       </Stack>
     </div>
   );
