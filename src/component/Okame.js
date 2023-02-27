@@ -8,11 +8,16 @@ const Okame = ({ targetdiet, events }) => {
   console.log(targetdiet);
   console.log(events, events[events.length - 1]);
 
-  const todaydiet = events[events.length - 1].diet;
-  if (todaydiet - targetdiet > 5) {
-    okame = okame1;
-  } else if (todaydiet - targetdiet > 2) {
-    okame = okame2;
+  if (events[events.length - 1] !== null) {
+    const todaydiet = events[events.length - 1].diet;
+
+    if (todaydiet - targetdiet > 5) {
+      okame = okame1;
+    }
+
+    if (todaydiet - targetdiet > 2) {
+      okame = okame2;
+    }
   }
 
   return (
