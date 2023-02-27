@@ -8,15 +8,13 @@ const Okame = ({ targetdiet, events }) => {
   console.log(targetdiet);
   console.log(events, events[events.length - 1]);
 
-  // const todaydiet = events[events.length - 1].diet;
+  const todaydiet = events[events.length - 1].diet;
+  if (todaydiet - targetdiet > 5) {
+    okame = okame1;
+  } else if (todaydiet - targetdiet > 2) {
+    okame = okame2;
+  }
 
-  // if (todaydiet - targetdiet > 5) {
-  //   okame = okame1;
-  // } else if (todaydiet - targetdiet > 2) {
-  //   okame = okame2;
-  // }
-
-  //オカメの画像変更でエラー発生
   return (
     <Box sx={{ p: 2, border: "2px dashed grey" }}>
       <img
