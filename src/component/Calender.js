@@ -1,5 +1,5 @@
 //
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction"; // needed for dayClick
@@ -15,11 +15,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import dayjs from "dayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { TimePicker } from "@mui/x-date-pickers/TimePicker";
-import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
-import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
-import { Typography } from "@mui/material";
 
 const Calendar = ({ events, setEvents }) => {
   const [open, setOpen] = React.useState(false);
@@ -43,7 +39,7 @@ const Calendar = ({ events, setEvents }) => {
       const trcdate = date.startOf("date");
 
       const result = events.filter(
-        (event) => event.start != trcdate.toISOString()
+        (event) => event.start !== trcdate.toISOString()
       );
       const newEvent = [
         ...result,
@@ -101,7 +97,7 @@ const Calendar = ({ events, setEvents }) => {
       />
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>体重の入力</DialogTitle>
-        <DialogContent>
+        <DialogContent style={{ paddingTop: "10px" }}>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DesktopDatePicker
               label="Date desktop"

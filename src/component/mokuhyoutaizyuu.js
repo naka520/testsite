@@ -27,17 +27,17 @@ const Mokuhyoutaizyuu = ({ targetdiet, setTargetdiet }) => {
   };
 
   return (
-    <Box
-      sx={{ width: 200, p: 2, border: "2px dashed grey" }}
-      className="bg-gray-100"
-    >
-      <Typography>目標体重の入力</Typography>
+    <Box sx={{ p: 2, border: "2px dashed grey" }} className="bg-gray-100">
+      <Typography style={{ fontFamily: "GungsuhChe" }}>
+        目標体重の入力
+      </Typography>
       <TextField
-        type="tText"
+        size="small"
         value={InputText}
         onChange={(e) => {
           setInputText(e.target.value);
         }}
+        sx={{ width: 100 }}
       />
       <Button
         className="bg-gradient-to-b from-slate-700 to-slate-500"
@@ -61,7 +61,6 @@ const Mokuhyoutaizyuu = ({ targetdiet, setTargetdiet }) => {
           <Todo content={targetdiet} />
         </ListItem>
       </List>
-      
     </Box>
   );
 };

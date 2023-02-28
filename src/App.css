@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
 }
 
 .Applogo {
@@ -14,7 +14,7 @@
   padding-left: 10vw;
   padding-top: 1vw;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -29,8 +29,12 @@
 
 .mokuhyou {
   height: 200px;
-  width: 200px;
+  /* width: 200px; */
   padding-top: 1vw;
+}
+
+.okame {
+  width: 200px;
 }
 
 .hiduke {
