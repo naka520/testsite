@@ -100,7 +100,7 @@ const Calendar = ({ events, setEvents }) => {
         <DialogContent style={{ paddingTop: "10px" }}>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DesktopDatePicker
-              label="Date desktop"
+              label="日付の入力"
               inputFormat="YYYY/MM/DD"
               value={date}
               onChange={handleChange}
