@@ -94,6 +94,7 @@ const Calendar = ({ events, setEvents }) => {
         events={events}
         eventContent={(eventInfo) => eventInfo.event.title}
         dateClick={handleClickOpen}
+        contentHeight="auto"
       />
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>体重の入力</DialogTitle>
