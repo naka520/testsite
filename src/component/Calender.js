@@ -40,8 +40,11 @@ const Calendar = ({ events, setEvents }) => {
       console.log(date);
       const trcdate = date.startOf("date");
 
+      const result = events.filter(
+        (event) => event.start != trcdate.toISOString()
+      );
       const newEvent = [
-        ...events,
+        ...result,
         {
           title: InputDiet + "kg",
           diet: Number(InputDiet),
@@ -49,6 +52,22 @@ const Calendar = ({ events, setEvents }) => {
           end: trcdate.toISOString(),
         },
       ];
+
+      // for (let i = 0; i < events.length; ++i) {
+      //   console.log(events[i].start);
+      //   if (events[i].start == trcdate.toISOString()) {
+      //     console.log("ok");
+      //     events[i].title = InputDiet + "kg";
+      //     events[i].diet = Number(InputDiet);
+      //     events[i].start = trcdate.toISOString();
+      //     events[i].end = trcdate.toISOString();
+      //     localStorage.setItem("events", JSON.stringify(events));
+
+      //     //値が重複してしまう部分が消えないので修正する
+      //   }
+      // }
+
+      console.log(newEvent);
 
       newEvent.sort((a, b) =>
         a.start === b.start ? 0 : a.start > b.start ? 1 : -1
@@ -67,7 +86,7 @@ const Calendar = ({ events, setEvents }) => {
   //   // bind with an arrow function
   //   onClick = { handleClickOpen };
   // };
-  console.log(events);
+
   return (
     <>
       <FullCalendar
