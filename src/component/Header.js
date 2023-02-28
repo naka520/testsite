@@ -33,7 +33,7 @@ const Header = () => {
                 textAlign="left"
                 sx={{ marginLeft: 1, p: 1, border: "2px dashed grey" }}
               >
-                <a href="/.auth/logout/github" className="text-slate-500">
+                <a href="/.auth/logout" className="text-slate-500">
                   Logout
                 </a>
               </Box>
