@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
+import { Padding } from "@mui/icons-material";
 
 const Header = () => {
   return (
@@ -15,16 +16,28 @@ const Header = () => {
       <AppBar position="static">
         <Toolbar className="bg-gray-200">
           <Typography variant="h6">
-            <Box textAlign="left">
-              <p className="text-slate-700">OkameCalender</p>
-            </Box>
-            <Box textAlign="left">
-              <a href="/.auth/login/">Login</a>
-            </Box>
+            <ul style={{ display: "flex" }}>
+              <Box textAlign="left">
+                <p className="text-slate-700">OkameDiet</p>
+              </Box>
+              <Box
+                textAlign="left"
+                sx={{ marginLeft: 1, p: 1, border: "2px dashed grey" }}
+              >
+                <a href="/.auth/login/github" className="text-slate-500">
+                  Login
+                </a>
+              </Box>
 
-            <Box textAlign="left">
-              <a href="/.auth/logout">Logout</a>
-            </Box>
+              <Box
+                textAlign="left"
+                sx={{ marginLeft: 1, p: 1, border: "2px dashed grey" }}
+              >
+                <a href="/.auth/logout/github" className="text-slate-500">
+                  Logout
+                </a>
+              </Box>
+            </ul>
           </Typography>
         </Toolbar>
       </AppBar>
