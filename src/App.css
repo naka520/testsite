@@ -11,7 +11,7 @@
 
 .yoko {
   display: flex;
-  padding-left: 10vw;
+  justify-content: center;
   padding-top: 1vw;
   width: 100vw;
   height: 100vh;
@@ -24,7 +24,7 @@
 }
 
 .side {
-  padding-left: 10vw;
+  padding-left: 1vw;
 }
 
 .mokuhyou {
@@ -38,8 +38,8 @@
 }
 
 .hiduke {
-  padding-top: 2vw;
-  padding-left: 5vw;
+  width: 610px;
+  /* height: 600px; */
 }
 
 .Appheader {
