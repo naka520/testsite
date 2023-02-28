@@ -1,8 +1,6 @@
-import Style from "../App.css";
-import logo from "./logo.svg";
 import Header from "./Header";
-import { List, Stack, Typography } from "@mui/material";
-import { Box, width } from "@mui/system";
+import { Stack } from "@mui/material";
+import { Box } from "@mui/system";
 import FullCalendar from "./Calender";
 import Okame from "./Okame";
 import Mokuhyoutaizyuu from "./mokuhyoutaizyuu";

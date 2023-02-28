@@ -6,10 +6,9 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import Style from "../App.css";
+
 import Todo from "./Todo";
-import { useState, useEffect } from "react";
-import Okame from "./Okame";
+import { useState } from "react";
 
 const Mokuhyoutaizyuu = ({ targetdiet, setTargetdiet }) => {
   // localStorage.getItem("todos")
