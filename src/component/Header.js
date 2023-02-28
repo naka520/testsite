@@ -18,6 +18,13 @@ const Header = () => {
             <Box textAlign="left">
               <p className="text-slate-700">OkameCalender</p>
             </Box>
+            <Box textAlign="left">
+              <a href="/.auth/login/">Login</a>
+            </Box>
+
+            <Box textAlign="left">
+              <a href="/.auth/logout">Logout</a>
+            </Box>
           </Typography>
         </Toolbar>
       </AppBar>
