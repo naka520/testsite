@@ -23,8 +23,10 @@ import { Typography } from "@mui/material";
 
 const Calendar = ({ events, setEvents }) => {
   const [open, setOpen] = React.useState(false);
-  const handleClickOpen = () => {
+  const handleClickOpen = (args) => {
     setOpen(true);
+    console.log(args);
+    setDate(dayjs(args.date.toISOString()));
   };
 
   const handleClose = () => {
@@ -73,6 +75,7 @@ const Calendar = ({ events, setEvents }) => {
         a.start === b.start ? 0 : a.start > b.start ? 1 : -1
       );
       setEvents(newEvent);
+      setOpen(false);
     }
     setInputDiet("");
   };
@@ -102,7 +105,7 @@ const Calendar = ({ events, setEvents }) => {
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DesktopDatePicker
               label="Date desktop"
-              inputFormat="MM/DD/YYYY"
+              inputFormat="YYYY/MM/DD"
               value={date}
               onChange={handleChange}
               renderInput={(params) => <TextField {...params} />}
