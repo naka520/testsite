@@ -13,6 +13,6 @@ React,MUI,JavaScript
 
 ### デプロイ先
 Azure static web appにてデプロイを行っています。
-以下サイトで閲覧できます。
+
 https://ambitious-plant-0c5e40c00.2.azurestaticapps.net/
 
