@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# OkameDiet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+今日の体重を入力し目標体重をオーバーするとオカメインコが太るアプリです
 
-## Available Scripts
+## 使い方
 
-In the project directory, you can run:
+カレンダーの日付をクリックし、その日の体重を入力します。
+目標体重を入力します。
 
 ### `npm start`
 
